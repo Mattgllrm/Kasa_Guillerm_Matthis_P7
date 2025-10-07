@@ -1,0 +1,43 @@
+
+
+.about-content {
+  width: 80%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.collapse {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    h3 {
+      margin: 0;
+    }
+
+    .icon {
+      transition: transform 0.3s ease;
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .collapse-content {
+    padding: 1rem;
+    color: black;
+    background-color: #f6f6f6;
+    border-radius: 0 0 10px 10px;
+  }
+}
