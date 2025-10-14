@@ -1,23 +1,3 @@
-/*import Banner from "../components/Banner";
-import aboutBanner from "../components/Images/banner2.png";
-
-function About() {
- return (
-    <>
-      <Banner image={aboutBanner} title="" />
-      <h2>Select</h2>
-      <p>............</p>
-    </>
-  );
-}
-export default About;
-*/
-
-
-
-
-
-
 import Banner from "../components/Banner";
 import aboutBanner from "../components/Images/banner2.png";
 import Collapse from "../components/Collapse";
@@ -52,14 +32,12 @@ function About() {
       <Banner image={aboutBanner} title="" />
 
       <section className="about-content">
-        {aboutSections.map((section, index) => (
-          <Collapse
-            key={index}
-            title={section.title}
-            content={section.content}
-          />
-        ))}
-      </section>
+  {aboutSections.map((section, index) => (
+    <Collapse key={index} title={section.title}>
+      {section.content}
+    </Collapse>
+  ))}
+</section>
     </main>
   );
 }

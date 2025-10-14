@@ -1,13 +1,11 @@
 
 
 .about-content {
-  width: 80%;
   max-width: 1024px;
   margin: auto;
 }
 
 .collapse {
-  margin-bottom: 1rem;
   border-radius: 10px;
   overflow: hidden;
 
@@ -39,5 +37,53 @@
     color: black;
     background-color: #f6f6f6;
     border-radius: 0 0 10px 10px;
+  }
+}
+
+
+/* Tablettes et moins */
+@media (max-width: 768px) {
+  .about-content {
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+  }
+
+  .collapse:last-child {
+    margin-bottom: 0; 
+  }
+
+  .collapse-header {
+    height: 40px;
+  }
+
+  .collapse-content {
+    padding: 0.6rem 1rem;
+  } 
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+  .about-content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .collapse:last-child {
+    margin-bottom: 0;
+  }
+
+  .collapse-header {
+    padding: 0.4rem 0.8rem;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .collapse-header h3 {
+    font-size: 0.95rem;
+  }
+
+  .collapse-content {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
   }
 }

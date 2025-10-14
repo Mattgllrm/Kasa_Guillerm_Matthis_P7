@@ -29,7 +29,6 @@
   transition: background-color 0.3s;
 }
 
-/* Responsive pour mobile */
 @media (max-width: 768px) {
   .error-page h1 {
     font-size: 120px; 
@@ -42,6 +41,7 @@
 
   .error-page {
     padding-bottom: 60px; 
+            max-height: 597px;
 
   }
 }

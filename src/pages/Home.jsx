@@ -10,7 +10,12 @@ function Home() {
       
       <section className="cards-section">
         {apartments.map((apt) => (
-          <Card key={apt.id} title={apt.title} cover={apt.cover} />
+          <Card
+            key={apt.id}
+            id={apt.id}           
+            title={apt.title}
+            cover={apt.cover}
+          />
         ))}
       </section>
     </>
